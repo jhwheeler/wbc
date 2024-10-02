@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WBC</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#eeeeee" />
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Helvetica, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .content {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 80px 0 100px;
+        background-color: white;
+      }
+      .logo {
+        max-width: 80%;
+        max-height: 120px;
+      }
+      .background {
+        display: none;
+      }
+      .footer {
+        flex: 1 0 auto;
+        background-color: rgb(130, 37, 34);
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer a,
+      .footer span {
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+        font-size: 18px;
+      }
+      .footer img {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+      }
+      @media (max-width: 768px) {
+        .footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      @media (min-width: 1280px) {
+        .content {
+          flex: 1 0 auto;
+          position: relative;
+          overflow: hidden;
+          padding: 0;
+        }
+        .background {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          max-width: none;
+          object-fit: cover;
+        }
+        .logo {
+          display: none;
+        }
+        .footer {
+          flex: 0 0 auto;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          padding: 40px;
+        }
+        .footer a,
+        .footer span {
+          margin: 0 10px;
+          font-size: 18px;
+        }
+        .footer img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img src="static/wbc_logo.png" alt="WBC Logo" class="logo" />
+        <img
+          src="static/background.png"
+          alt="WBC Logo and World Map"
+          class="background"
+        />
+      </div>
+      <div class="footer">
+        <a href="tel:+12028263463"
+          ><img src="static/icons/phone.svg" alt="Phone" />(202) 826-3463</a
+        >
+        <a href="mailto:bhw@wbc.us"
+          ><img src="static/icons/email.svg" alt="Email" />bhw@wbc.us</a
+        >
+        <a href="https://maps.app.goo.gl/G5KNa85ejw3fcmH89" target="_blank"
+          ><img src="static/icons/address.svg" alt="Address" />440 G St NW
+          Washington, DC 20005</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
